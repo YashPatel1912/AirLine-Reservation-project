@@ -1,0 +1,1257 @@
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Caprasimo&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+
+.container {
+  max-width: 82rem;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.back-btn {
+  font-size: 2rem;
+  margin: 1rem 0 0 1rem;
+  color: black;
+}
+
+button {
+  cursor: pointer;
+}
+
+/** -----------------------
+** start Navbar section css
+** -------------------------  */
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  padding: 2.5rem 4rem;
+  margin-top: 2rem;
+  background-color: black;
+  color: white;
+
+  & .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  & ul {
+    display: flex;
+    align-items: center;
+    gap: 2.2rem;
+
+    & a,
+    li {
+      color: white;
+      list-style: none;
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+  }
+}
+
+/** -----------------------
+** End Navbar section css
+** -------------------------  */
+
+/** -----------------------
+** Start Home Page css
+** -------------------------  */
+.hero-section {
+  margin-top: 1rem;
+  position: relative;
+}
+
+.banner-content {
+  background-image: url(../public/img/banner.avif);
+  height: 100vh;
+  background-size: cover;
+
+  & .text {
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    color: rgb(241, 232, 232);
+    text-shadow: 0 4px 4px black;
+    margin-right: 40px;
+
+    & h1 {
+      font-size: 4rem;
+      font-weight: bold;
+      margin: 1rem;
+      font-style: normal;
+      font-family: "Caprasimo", serif;
+      letter-spacing: 0.2rem;
+      overflow-wrap: break-word;
+    }
+
+    & p {
+      font-family: "Caprasimo", serif;
+      line-height: 1.5rem;
+      letter-spacing: 0.1rem;
+      font-size: 1.3rem;
+      font-weight: 300;
+      text-align: justify;
+    }
+  }
+}
+
+.main-section {
+  background-color: white;
+  position: relative;
+}
+
+/** -----------------------
+** Start FlightBookSection css
+** -------------------------  */
+
+.flight-details {
+  width: 90%;
+  margin: 5rem auto;
+  padding: 3rem 1rem;
+  border-radius: 10px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.flight-type {
+  display: flex;
+  gap: 1rem;
+  margin: 0 0 2rem 1.2rem;
+
+  & .type-para {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  & .type-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    & .types {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+
+      & span {
+        font-size: 1rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+/* .flight-type > select {
+  padding: 0.8rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  border-radius: 10px;
+  margin: 0 0 1rem 1rem;
+  border: 2px solid #d1d1d1;
+} */
+
+.flight-content {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+
+  & span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 1rem;
+  }
+
+  & input {
+    font-size: 1rem;
+    border: none;
+    background-color: #f0f0f0;
+    padding: 0.5rem 1rem;
+    width: 90%;
+  }
+}
+
+.Ticket-book {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  border: 2px solid #d1d1d1;
+  padding: 0.5rem 1rem;
+}
+
+.flight-Date {
+  gap: 0.5rem;
+  background-color: #f0f0f0;
+  padding: 0.5rem 1rem;
+  border: 2px solid #d1d1d1;
+  border-radius: 10px;
+
+  & .depart {
+    border-right: 1px solid #d1d1d1;
+  }
+
+  & input {
+    margin-top: 0.5rem;
+    width: 90%;
+  }
+}
+
+.flight-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+
+  & button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 2.5rem;
+    border: 2px solid #d1d1d1;
+    border-radius: 10px;
+    background-color: #fc3c00;
+    color: white;
+    letter-spacing: 0.1rem;
+  }
+}
+
+/** -----------------------
+** End FlightBookSection css
+** -------------------------  */
+
+/* .flight-class {
+  position: absolute;
+  top: -5%;
+  left: 30%;
+  display: inline-flex;
+  gap: 3rem;
+  background-color: #d9d9d9;
+  padding: 1.1rem 2.5rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  cursor: pointer;
+
+  & h3 {
+    font-family: "Caprasimo", serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: black;
+  }
+} */
+
+/* .flight-details {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3rem 2rem;
+} */
+
+/* .box {
+  display: flex;
+  gap: 1rem;
+  background-color: white;
+  padding: 2rem 1rem;
+  border: 1px solid rgb(133, 128, 128);
+  cursor: pointer;
+} */
+
+/* .flight-logo {
+  margin: 5px 0;
+  border: 1px solid black;
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+} */
+
+/* .flight-search {
+  margin: auto;
+
+  & button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: #a47b41;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+} */
+
+.main-text {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  margin: 3rem;
+
+  & h1 {
+    letter-spacing: 0.5rem;
+    font-size: 1.5rem;
+    font-family: "Caprasimo", serif;
+    font-weight: 400;
+  }
+
+  & h3 {
+    font-size: 2rem;
+    font-family: "Caprasimo", serif;
+    font-weight: 100;
+    letter-spacing: 0.2rem;
+  }
+
+  & p {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+  }
+}
+
+.main-content-1 {
+  background-color: #a47b411f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 8rem 4rem;
+  margin: 4rem auto;
+}
+
+.travel-info-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.travel-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  & li {
+    width: fit-content;
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: #d9d9d9;
+  }
+}
+
+.travel-img-1 {
+  display: grid;
+  place-items: center;
+  & img {
+    width: 90%;
+  }
+}
+
+.main-content-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  padding: 8rem 4rem;
+  margin: 4rem auto;
+}
+
+.travel-info-2 {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.travel-info-title {
+  & h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    font-family: "Calistoga", serif;
+    letter-spacing: 0.1rem;
+  }
+}
+
+.travel-info-details {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  width: 90%;
+
+  & h1 {
+    font-size: 1.3rem;
+    font-family: "Calistoga", serif;
+    font-weight: 200;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  & p {
+    font-size: 1rem;
+    text-align: justify;
+    letter-spacing: 0.1rem;
+  }
+}
+
+.travel-img-2 {
+  width: 40%;
+
+  & img {
+    width: 90%;
+  }
+}
+/** -----------------------
+** End Home Page css
+** -------------------------  */
+/** -----------------------
+** Start footer Page css
+** -------------------------  */
+
+.footer {
+  background-color: #a47b4143;
+  padding: 1.5rem;
+}
+
+.footer-search {
+  text-align: center;
+
+  & input {
+    font-size: 1.2rem;
+    padding: 0.5rem 3rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    color: #00000039;
+  }
+  & button {
+    background-color: #be8c46;
+    padding: 0.5rem 1.5rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    margin-top: 1rem;
+    border: none;
+  }
+}
+
+.footer-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 4rem 0 1.5rem 0;
+  place-items: center;
+
+  & .social-icon {
+    margin-left: 1rem;
+    & .icon {
+      cursor: pointer;
+      text-align: center;
+      margin: 10px;
+      font-size: 2rem;
+      border-radius: 10px;
+    }
+  }
+
+  & .detail {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    & p {
+      margin: 1rem;
+      letter-spacing: 0.1rem;
+    }
+
+    & li {
+      list-style: none;
+    }
+
+    & li > a {
+      color: black;
+      cursor: pointer;
+      letter-spacing: 0.1rem;
+      line-height: 1.5rem;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.footer-end {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/** -----------------------
+** End footer Page css
+** -------------------------  */
+/** -----------------------
+** Start SignIN page  css
+** -------------------------  */
+
+.signin-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+label {
+  display: block;
+}
+
+/** -----------------------
+** End SignIN page css
+** -------------------------  */
+/** -----------------------
+** Start Error page css
+** -------------------------  */
+#error-page {
+  margin: 4rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#error-page .content {
+  max-width: 70rem;
+  text-align: center;
+}
+.content h2.header {
+  margin: 2rem 0;
+  font-size: 18vw;
+  line-height: 1em;
+  animation: animate 10s ease-in-out infinite;
+  background: linear-gradient(#e66465, #9198e5);
+  background-size: 500%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.content h4 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.content .btns {
+  margin: 25px 0;
+  display: inline-flex;
+  justify-content: center;
+}
+.content .btns a {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+  border: 2px solid var(--btn-color);
+  color: var(--btn-color);
+  font-weight: 500;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  background-color: blue;
+  color: white;
+}
+.content .btns a:hover {
+  background: var(--btn-color);
+  color: blue;
+  border: 2px solid blue;
+}
+
+/** -----------------------
+** End Error page css
+** -------------------------  */
+
+/** -----------------------
+** Start Ticket design css
+** -------------------------  */
+
+.ticket-information {
+  margin: 1rem 2rem;
+}
+
+.ticketDetails {
+  width: 70%;
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 2rem auto;
+}
+
+.city-details {
+  margin-bottom: 1rem;
+}
+
+.time-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & .line {
+    width: 10rem;
+    height: 0px;
+    border: 1px solid black;
+  }
+
+  & .timeParts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+
+    & .icons {
+      font-size: 1.5rem;
+      margin-right: 0.7rem;
+    }
+
+    & span {
+      font-size: 1.2rem;
+      font-weight: 400;
+      display: flex;
+    }
+  }
+}
+
+.ticket-amount {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.ticket-button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  & button {
+    padding: 1rem 2rem;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #fc3c00;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  }
+}
+
+/** -----------------------
+** End Ticket design css
+** -------------------------  */
+/** -----------------------
+** Start passenger page css
+** -------------------------  */
+.AllInformation {
+  margin: 1rem;
+}
+.information {
+  display: flex;
+}
+
+.main-head {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Caprasimo", serif;
+  margin: 1rem;
+}
+
+.passenger-container {
+  width: 60%;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1rem;
+  margin: 3rem;
+
+  & input,
+  select {
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    border: 2px solid grey;
+    font-size: 1rem;
+  }
+
+  & .head-text {
+    text-transform: capitalize;
+    margin: 1rem 2rem 2rem 1rem;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid grey;
+  }
+}
+
+.price-information {
+  width: 100%;
+
+  .Total-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem;
+
+    & .details {
+      border-bottom: 1px solid black;
+      padding-bottom: 0.5rem;
+    }
+
+    & p {
+      padding-bottom: 0.3rem;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+    & span {
+      font-weight: 600;
+      padding-left: 1rem;
+      float: inline-end;
+    }
+  }
+}
+
+.passenger-information {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  & label {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+
+  & .bottom {
+    display: flex;
+    gap: 2rem;
+  }
+
+  & .fullName {
+    display: grid;
+    width: 60%;
+  }
+}
+
+.contact-information {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem;
+
+  & label {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.passenger-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  & .btn {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid white;
+    font-family: Caprasimo;
+    letter-spacing: 0.01rem;
+  }
+
+  & .payment-btn {
+    background-color: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    gap: 2rem;
+  }
+
+  & .back-btn {
+    background-color: white;
+    color: blue;
+    border: 2px solid blue;
+  }
+}
+
+/** -----------------------
+** End passenger page  css
+** -------------------------  */
+/** -----------------------
+** Start Payment page  css
+** -------------------------  */
+
+.book-details {
+  display: flex;
+  gap: 4rem;
+}
+
+.payment-amount {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 2rem;
+  margin: 2rem 2rem 0 0;
+}
+
+.book-info {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  width: 60%;
+  padding: 2rem;
+  margin: 2rem;
+
+  & .book-information {
+    border-top: 1px solid black;
+    padding-top: 1.5rem;
+    display: flex;
+    gap: 4rem;
+    margin-top: 1rem;
+
+    & p {
+      font-family: "Roboto", serif;
+      font-size: 1.2rem;
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+      color: grey;
+    }
+
+    & span {
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+  }
+}
+
+.payment-page {
+  width: 60%;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  margin: 2rem;
+}
+
+.head-txt {
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid black;
+
+  & h1 {
+    padding-bottom: 0.5rem;
+  }
+}
+
+.payment-details {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  & label {
+    padding-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  & input {
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+
+  & .card-num {
+    display: grid;
+    width: 90%;
+  }
+
+  & .pay-information {
+    display: flex;
+    gap: 2rem;
+
+    & .expire-details {
+      display: flex;
+
+      & input {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+.payment-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+
+  & .buttons {
+    display: flex;
+    gap: 2rem;
+  }
+
+  & .btn {
+    padding: 0.6rem 2rem;
+    border-radius: 5px;
+    font-size: 1.4rem;
+  }
+  & .payment-btn {
+    background-color: blue;
+    color: white;
+    border: 1px solid white;
+  }
+
+  & .btn-back {
+    background-color: white;
+    color: blue;
+    border: 2px solid blue;
+  }
+}
+
+/** -----------------------
+** End payment page  css
+** -------------------------  */
+/** -----------------------
+** start SignUp page  css
+** -------------------------  */
+
+.login-page {
+  background-color: #a47b411f;
+  width: 100%;
+  aspect-ratio: 2;
+}
+
+.login-details {
+  display: grid;
+  place-items: center;
+  gap: 2rem;
+  border: 1px solid black;
+  padding: 2.5rem 5rem;
+  width: fit-content;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.login-head {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-bottom: 0.8rem;
+  text-align: center;
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+
+.login-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  & label {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+
+  & input {
+    padding: 0.4rem 3rem;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+}
+
+.login-button {
+  margin-top: 2rem;
+  text-align: center;
+
+  & button {
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    width: 90%;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+  }
+}
+/** -----------------------
+** End SignUp page  css
+** -------------------------  */
+/** -----------------------
+** Start Contact page  css
+** -------------------------  */
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem;
+}
+
+.contact-head {
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-bottom: 2px solid black;
+  padding-bottom: 0.2rem;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  & label {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+  }
+
+  & input,
+  textarea {
+    padding: 0.3rem 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+}
+
+.contact-btn {
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  background-color: #fc3c00;
+  color: white;
+  border: none;
+}
+
+.g-map {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0;
+}
+
+/** -----------------------
+** End Contact page  css
+** -------------------------  */
+
+.book-Success {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  margin-top: 10rem;
+  gap: 1rem;
+}
+
+.checkmark {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  stroke-width: 2;
+  stroke: #4bb71b;
+  stroke-miterlimit: 10;
+  box-shadow: inset 0px 0px 0px #4bb71b;
+  animation: fill 0.4s ease-in-out 0.4s forwards,
+    scale 0.3s ease-in-out 0.9s both;
+}
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #4bb71b;
+  fill: #fff;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes scale {
+  0%,
+  100% {
+    transform: none;
+  }
+
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #4bb71b;
+  }
+}
+
+.success-head {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.success-para {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.success-btn {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+
+  & button {
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+
+    &.home-success-btn {
+      background-color: green;
+      color: white;
+      border: none;
+    }
+
+    &.report-success-btn {
+      background-color: white;
+      color: green;
+      border: 2px solid green;
+    }
+  }
+}
+
+@media (width <= 998px) {
+  .flight-content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/** -----------------------
+** start about page  css
+** -------------------------  */
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: #f7f9fc;
+}
+.hero {
+  background: url("../public/image1.png") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+.hero p {
+  font-size: 1.25rem;
+  margin: 20px 0;
+}
+.hero a {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 6px;
+}
+.section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.two-col {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  text-align: justify;
+}
+.two-col > div {
+  flex: 1;
+  min-width: 300px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+.card,
+.stat-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+.card h3,
+.stat-box h3 {
+  margin-top: 0;
+}
+
+img.team-img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.team-member {
+  text-align: center;
+}
+/** -----------------------
+** End about page  css
+** -------------------------  */

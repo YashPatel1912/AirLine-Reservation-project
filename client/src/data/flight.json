@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "airline": "Air India",
+    "fromCity": "Delhi",
+    "toCity": "Mumbai",
+    "date": "2025-03-15",
+    "price": "₹7,500",
+    "duration": "2h 10m",
+    "departureTime": "10:30 AM IST",
+    "arrivalTime": "12:40 PM IST"
+  },
+  {
+    "id": 2,
+    "airline": "IndiGo",
+    "fromCity": "Bangalore",
+    "toCity": "Chennai",
+    "date": "2025-03-16",
+    "price": "₹3,200",
+    "duration": "1h 05m",
+    "departureTime": "09:15 AM IST",
+    "arrivalTime": "10:20 AM IST"
+  },
+  {
+    "id": 3,
+    "airline": "Vistara",
+    "fromCity": "Kolkata",
+    "toCity": "Hyderabad",
+    "date": "2025-03-17",
+    "price": "₹6,800",
+    "duration": "2h 25m",
+    "departureTime": "06:50 AM IST",
+    "arrivalTime": "09:15 AM IST"
+  },
+  {
+    "id": 4,
+    "airline": "SpiceJet",
+    "fromCity": "Mumbai",
+    "toCity": "Dubai",
+    "date": "2025-03-18",
+    "price": "₹21,500",
+    "duration": "3h 30m",
+    "departureTime": "11:45 PM IST",
+    "arrivalTime": "02:15 AM IST"
+  },
+  {
+    "id": 5,
+    "airline": "Air India Express",
+    "fromCity": "Chennai",
+    "toCity": "Singapore",
+    "date": "2025-03-19",
+    "price": "₹14,200",
+    "duration": "4h 10m",
+    "departureTime": "08:30 AM IST",
+    "arrivalTime": "12:40 PM IST"
+  },
+  {
+    "id": 6,
+    "airline": "Go First",
+    "fromCity": "Delhi",
+    "toCity": "London",
+    "date": "2025-03-20",
+    "price": "₹55,000",
+    "duration": "9h 15m",
+    "departureTime": "06:00 PM IST",
+    "arrivalTime": "11:15 PM IST"
+  },
+  {
+    "id": 7,
+    "airline": "IndiGo",
+    "fromCity": "Hyderabad",
+    "toCity": "Sydney",
+    "date": "2025-03-21",
+    "price": "₹74,500",
+    "duration": "12h 30m",
+    "departureTime": "10:00 PM IST",
+    "arrivalTime": "10:30 AM IST"
+  },
+  {
+    "id": 8,
+    "airline": "Vistara",
+    "fromCity": "Bangalore",
+    "toCity": "Paris",
+    "date": "2025-03-22",
+    "price": "₹62,700",
+    "duration": "10h 45m",
+    "departureTime": "07:20 PM IST",
+    "arrivalTime": "06:05 AM IST"
+  },
+  {
+    "id": 9,
+    "airline": "Air India",
+    "fromCity": "Mumbai",
+    "toCity": "New York",
+    "date": "2025-03-23",
+    "price": "₹89,999",
+    "duration": "15h 30m",
+    "departureTime": "01:00 AM IST",
+    "arrivalTime": "04:30 PM IST"
+  },
+  {
+    "id": 10,
+    "airline": "SpiceJet",
+    "fromCity": "Kolkata",
+    "toCity": "Bangkok",
+    "date": "2025-03-24",
+    "price": "₹18,900",
+    "duration": "3h 45m",
+    "departureTime": "09:50 PM IST",
+    "arrivalTime": "01:35 AM IST"
+  },
+  {
+    "id": 11,
+    "airline": "Go First",
+    "fromCity": "Chennai",
+    "toCity": "Berlin",
+    "date": "2025-03-25",
+    "price": "₹67,800",
+    "duration": "11h 20m",
+    "departureTime": "06:15 PM IST",
+    "arrivalTime": "05:35 AM IST"
+  },
+  {
+    "id": 12,
+    "airline": "Air India Express",
+    "fromCity": "Hyderabad",
+    "toCity": "Toronto",
+    "date": "2025-03-26",
+    "price": "₹95,200",
+    "duration": "17h 10m",
+    "departureTime": "02:30 AM IST",
+    "arrivalTime": "07:40 PM IST"
+  },
+  {
+    "id": 13,
+    "airline": "IndiGo",
+    "fromCity": "Delhi",
+    "toCity": "Kathmandu",
+    "date": "2025-03-27",
+    "price": "₹12,300",
+    "duration": "1h 45m",
+    "departureTime": "04:00 PM IST",
+    "arrivalTime": "05:45 PM IST"
+  },
+  {
+    "id": 14,
+    "airline": "Vistara",
+    "fromCity": "Mumbai",
+    "toCity": "Tokyo",
+    "date": "2025-03-28",
+    "price": "₹79,000",
+    "duration": "12h 50m",
+    "departureTime": "11:00 PM IST",
+    "arrivalTime": "11:50 AM IST"
+  },
+  {
+    "id": 15,
+    "airline": "Air India",
+    "fromCity": "Bangalore",
+    "toCity": "Los Angeles",
+    "date": "2025-03-29",
+    "price": "₹1,05,000",
+    "duration": "19h 45m",
+    "departureTime": "09:45 PM IST",
+    "arrivalTime": "05:30 PM IST"
+  }
+]

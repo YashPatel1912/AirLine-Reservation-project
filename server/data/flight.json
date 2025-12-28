@@ -1,0 +1,25 @@
+{
+    "passenger": {
+        "fullName": "John Doe",
+        "gender": "Male",
+        "birthDate": "1990-01-01",
+        "phone": "+1234567890",
+        "email": "johndoe@example.com"
+    },
+    "flightData": {
+        "fromCity": "New York",
+        "toCity": "Los Angeles",
+        "duration": "2h 30m",
+        "departureTime": "2023-10-15T14:30:00",
+        "arrivalTime": "2023-10-15T17:00:00",
+        "price": 250.00,
+        "flightType": "One-way",
+        "date": "2023-10-15",
+        "returnDate": null
+    },
+    "payment": {
+        "cardNumber": "4111111111111111",
+        "expireDate": "12/25",
+        "cvv": "123"
+    }
+}
